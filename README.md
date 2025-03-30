@@ -14,6 +14,7 @@ cd pythonCRUD
 pip install -r requirements.txt
 
 4. Set up your database credentials:
+
 Create a file named .env in the project root and add your MySQL credentials
 DB_NAME=your_database_name
 DB_USER=your_username
