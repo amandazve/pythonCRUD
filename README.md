@@ -13,11 +13,19 @@ cd pythonCRUD
 3. Install the dependencies:
 pip install -r requirements.txt
 
-4. Create migrations 
+4. Set up your database credentials:
+Create a file named .env in the project root and add your MySQL credentials
+DB_NAME=your_database_name
+DB_USER=your_username
+DB_PASSWORD=your_password
+DB_HOST=localhost
+DB_PORT=3306
+
+5 Create migrations 
 python manage.py makemigrations
 python manage.py migrate
 
-5. After installation, run the project:
+6. After installation, run the project:
 python manage.py runserver 
 
 
@@ -42,7 +50,8 @@ Django: A Python web framework that makes web development faster and more effici
 
 MySQL: A widely-used open-source relational database system, chosen for its performance, cross-platform compatibility, and broad support across multiple programming languages. I selected MySQL not only because of its popularity but also due to my interest in learning more about it. While I didn't directly use SQL queries (thanks to Django ORM), I found it valuable to see how the database operates and integrates seamlessly into the project.
 
-What I Learned
+What I Learned:
+
 Throughout the development of this project, I gained practical experience integrating Django with a MySQL database. Setting up the database in Django was easier than I expected, and using the Django ORM made interacting with the database feel natural and less error-prone.
 Another key takeaway was how Django simplifies the creation of admin interfaces. By using just a few commands, I was able to implement a graphical interface to manage the data stored in the database, which saved a lot of time.
 
